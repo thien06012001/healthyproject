@@ -11,6 +11,10 @@ function HomeScreen() {
             error: 'error'
         }
     )
+
+    const checkEmail = () =>{
+        setUserEmail(!user ? user_email.have_email : user_email.error )
+    }
     const [user_displayname, setUserDisplayName] = useState(
         {
             have_displayname: user.displayName,
@@ -28,12 +32,12 @@ function HomeScreen() {
     <div>
         <h1>Welcome to our page</h1>
         <label htmlFor=""></label>
-        <h2>{user_email.error}</h2>\
-        <h2>{user_displayname.error}</h2>
-        <h2>{user_uid.error}</h2>
+        <h2>{user.email}</h2>\
+        <h2>{user.displayName}</h2>
+        <h2>{user.uid}</h2>
         <Link href={'/BMI'}>BMI</Link>
         <button onClick={() => auth.signOut()}>Logout</button>
-        <button onClick={() => setUserEmail(user.email)}>Show</button>
+        <button onClick={checkEmail}>Show</button>
     </div>
     )
 }
