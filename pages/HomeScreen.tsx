@@ -1,15 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { auth } from '../firebase'
 import { selectUser } from '../slices/userSlice'
 function HomeScreen() {
     const user = useSelector(selectUser)
+    const [user_email, setUserEmail] = useState(
+        {
+            have_email: user.email,
+            error: 'error'
+        }
+    )
+    const [user_displayname, setUserDisplayName] = useState(
+        {
+            have_displayname: user.displayname,
+            error: 'error'
+        }
+    )
+
+    const [user_uid, setUserUid] = useState(
+        {
+            user_uid: user.displayname,
+            error: 'error'
+        }
+    )
     return (
     <div>
         <h1>Welcome to our page</h1>
-        <h2>{user.email}</h2>\
-        <h2>{user.displayName}</h2>
-        <h2>{user.uid}</h2>
+        <label htmlFor=""></label>
+        <h2>{user_email.error}</h2>\
+        <h2>{user_displayname.error}</h2>
+        <h2>{user_uid.error}</h2>
         <button onClick={() => auth.signOut()}>Logout</button>
     </div>
     )
