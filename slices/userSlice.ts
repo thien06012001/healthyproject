@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { RootState } from '../store'
-
+const  info = <any>'alert'
 export interface CounterState {
   value: number
 }
@@ -13,7 +13,7 @@ const initialState: CounterState = {
 export const userSlice = createSlice({
   name: 'user',
   initialState: {
-    user: null,
+    user: null || <any>info,
   },
   reducers: {
     login: (state, action : PayloadAction<any>) => {
