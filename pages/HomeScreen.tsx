@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { auth } from '../firebase'
@@ -12,7 +13,7 @@ function HomeScreen() {
     )
     const [user_displayname, setUserDisplayName] = useState(
         {
-            have_displayname: user.displayname,
+            have_displayname: user.displayName,
             error: 'error'
         }
     )
@@ -30,6 +31,7 @@ function HomeScreen() {
         <h2>{user_email.error}</h2>\
         <h2>{user_displayname.error}</h2>
         <h2>{user_uid.error}</h2>
+        <Link href={'/BMI'}>BMI</Link>
         <button onClick={() => auth.signOut()}>Logout</button>
     </div>
     )
