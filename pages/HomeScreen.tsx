@@ -37,7 +37,6 @@ function HomeScreen() {
         <h2>{user.uid}</h2>
         <Link href={'/BMI'}>BMI</Link>
         <button onClick={() => auth.signOut()}>Logout</button>
-        <button onClick={checkEmail}>Show</button>
     </div>
     )
 }
