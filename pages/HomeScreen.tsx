@@ -33,6 +33,7 @@ function HomeScreen() {
         <h2>{user_uid.error}</h2>
         <Link href={'/BMI'}>BMI</Link>
         <button onClick={() => auth.signOut()}>Logout</button>
+        <button onClick={() => setUserEmail(user.email)}>Show</button>
     </div>
     )
 }
