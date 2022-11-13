@@ -6,9 +6,9 @@ function HomeScreen() {
     const user = useSelector(selectUser)
     return (
     <div>
-        {/* <h2>{user.email}</h2>\
+        <h2>{user.email}</h2>\
         <h2>{user.displayName}</h2>
-        <h2>{user.uid}</h2> */}
+        <h2>{user.uid}</h2>
         <button onClick={() => auth.signOut()}>Logout</button>
     </div>
     )
