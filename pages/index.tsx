@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <HowWeWork />
           <FoodDemo />
         </main>
-        <main className='max-w-screen-2xl mx-auto '>
+        <main className='max-w-screen-2xl h-[674px] mx-auto mt-[100px] bg-gradient-to-b from-[#A1C94C] to-[#FFF8ED80]'>
           <PeopleSay />
         </main>
      </div>

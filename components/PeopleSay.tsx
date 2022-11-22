@@ -8,7 +8,7 @@ type Props = {}
 function PeopleSay({}: Props) {
   return (
     <div className='flex flex-row '>
-      <div className='ml-[200px]'>
+      <div className='ml-[200px] my-auto'>
         <div className='w-[415px] h-[128px]'>
           <p className='text-[48px] text-[#333333]'>What Are People <br /> 
           Saying <span className='text-[#FB9333] text-[48px]'>About Us</span></p> 
@@ -18,7 +18,7 @@ function PeopleSay({}: Props) {
             let's read pure reviews from customers who bought our products.</p>
         </div>
       </div>
-      <div className='grid grid-col mx-auto'>
+      <div className='grid grid-col mx-auto mt-[100px]'>
         <div className='w-[269px] h-[402px] bg-white rounded-xl '>
         <div className='mt-[-45px] ml-[20px]'>
           <Image src={people1}
@@ -26,7 +26,10 @@ function PeopleSay({}: Props) {
                 alt={''}/>
         </div>
           <div className='ml-[20px] w-[181px] h-[32px] mt-[150px]'>
-            <p className='text-24px'>Dao Nguyen </p>
+            <p className='text-[24px] font-semibold'>Dao Nguyen </p>
+          </div>
+          <div className='ml-[20px] w-[181px] h-[32px] mt-[20px]'>
+            <p className='text-gray-500 text-[14px]  opacity-[0.8]'>22 Years</p>
           </div>
         </div>
       </div>

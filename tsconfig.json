@@ -16,6 +16,7 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts","./node_modules/@sanity/base/types/**/*.ts", "**/*.ts", "**/*.tsx", "sanity/schemas/schema.ts"],
+  "exclude": ["node_modules"],
+  
 }
