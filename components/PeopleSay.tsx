@@ -2,6 +2,7 @@ import React from 'react'
 import people1 from '../public/assets/people1.png'
 import people2 from '../public/assets/people2.png'
 import people3 from '../public/assets/people3.png'
+import Image from 'next/image'
 type Props = {}
 
 function PeopleSay({}: Props) {
@@ -17,9 +18,14 @@ function PeopleSay({}: Props) {
             let's read pure reviews from customers who bought our products.</p>
         </div>
       </div>
-      <div className='grid grid-col'>
-        <div className='w-[269px] h-[402] bg-white '>
-          <div className='ml-[20px] w-[181px] h-[32px] '>
+      <div className='grid grid-col mx-auto'>
+        <div className='w-[269px] h-[402px] bg-white '>
+        <div>
+          <Image src={people1}
+                className='w-[90px] h-[90px] absolute'
+                alt={''}/>
+        </div>
+          <div className='ml-[20px] w-[181px] h-[32px] mt-[150px]'>
             <p className='text-24px'>Dao Nguyen </p>
           </div>
         </div>
