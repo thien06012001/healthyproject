@@ -31,15 +31,7 @@ const Home: NextPage = () => {
           <HowWeWork />
           <FoodDemo />
         </main>
-        <main className='max-w-screen-2xl mx-auto 
-        style={{
-          0%={
-            bg-[#FFF8ED80]
-          }
-          100%={
-            bg-[#A1C94C]
-          }
-        }}'>
+        <main className='max-w-screen-2xl mx-auto '>
           <PeopleSay />
         </main>
      </div>
