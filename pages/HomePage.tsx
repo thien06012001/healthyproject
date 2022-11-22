@@ -27,7 +27,7 @@ function HomePage() {
     }, [dispatch])
     return (
      
-    <div>
+    <div >
         {!user ? (
         <Login />
       ) : (<HomeScreen/>) }

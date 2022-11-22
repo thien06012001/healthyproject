@@ -3,10 +3,11 @@ import React, { useRef } from 'react'
 import styles from '../styles/Login.module.css'
 import { auth } from '../firebase';
 import { useRouter } from 'next/router'
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 function Login() {
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
+    const router = useRouter()
     const signIn = (e: any) => {
         e.preventDefault()
         signInWithEmailAndPassword
@@ -32,6 +33,7 @@ function Login() {
             <h2 className={styles.neon}>Sign In</h2>
             <form action=''>
               <div className={styles.user_box}>
+                <span className={styles.user_span}></span>
                 <input ref={emailRef} className={styles.user_input} type="email" name=""/>
                 <label className={styles.user_label}>Email</label>
               </div>
@@ -39,19 +41,20 @@ function Login() {
                 <input ref={passwordRef} className={styles.user_input} type="password" name="" />
                 <label className={styles.user_label}>Password</label>
               </div>
-              <button type='submit' onClick={signIn} >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Sign In
-              </button>
+              <div className='flex flex-row justify-center items-center'>
+                <button type='submit' onClick={signIn} className={styles.button} >
+                  Sign In
+                </button>
+                <Link className={styles.signup_button} href={'/Signup'}>Sign Up</Link>
+              </div>
             </form>
-            <div className='p-5'>
-                <p className='text-white'>Don't have an account yet? <Link className={styles.signup_button} href={'/Signup'}>Sign Up</Link></p>
+            <div className='m-auto'>
+              <button onClick={() => router.push('/')} className={styles.button_homepage}>Back to HomePage</button>
             </div>
         </div>
     </div>
+
+  
   )
 }
 

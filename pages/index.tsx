@@ -3,35 +3,37 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter'
 import HomePage from './HomePage';
+import Navbar from '../components/Navbar';
+import Banner from '../components/Banner';
+import Feed from '../components/Feed';
+import Feed2 from '../components/Feed2';
+import HowWeWork from '../components/HowWeWork';
+import FoodDemo from '../components/FoodDemo';
+import PeopleSay from '../components/PeopleSay';
 const Home: NextPage = () => {
-  const [text, count] = useTypewriter({
-    words: [
-      `Hi!`,
-      "Welcome to our website", 
-      "This is a website for everyone health",
-      'From group 12:30 AM'
-    ],
-    loop: true,
-    delaySpeed:2000,
-  })
+  // const [text, count] = useTypewriter({
+  //   words: [
+  //     `Hi!`,
+  //     "Welcome to our website", 
+  //     "This is a website for everyone health",
+  //     'From group 12:30 AM'
+  //   ],
+  //   loop: true,
+  //   delaySpeed:2000,
+  // })
   return (
-    <div className='welcome_page'>
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-        <div id='title'>
-            <span className='mr-3 p-0'>
-              {text} <Cursor cursorColor='white' />
-            </span>
-            
-          <Link href={'HomePage'} className='button'>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Get Started 
-          </Link>
-        </div>
+    <div className='bg-lime-50'>
+        <Navbar />
+        <main className='w-screen mx-auto'>
+          <Banner />
+          <Feed />
+          <Feed2/>
+          <HowWeWork />
+          <FoodDemo />
+        </main>
+        <main className='max-w-screen-2xl mx-auto'>
+          <PeopleSay />
+        </main>
      </div>
   )
 }

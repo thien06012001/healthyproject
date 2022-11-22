@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import Navbar from '../components/Navbar'
 import { auth } from '../firebase'
 import { selectUser } from '../slices/userSlice'
 function HomeScreen() {
@@ -29,14 +30,16 @@ function HomeScreen() {
         }
     )
     return (
-    <div>
-        <h1>Welcome to our page</h1>
+    <div className='bg-[#ecf0f3]'>
+        {/* <h1>Welcome to our page</h1>
         <label htmlFor=""></label>
         <h2>{user.email}</h2>\
         <h2>{user.displayName}</h2>
         <h2>{user.uid}</h2>
         <Link href={'/BMI'}>BMI</Link>
-        <button onClick={() => auth.signOut()}>Logout</button>
+        <button onClick={() => auth.signOut()}>Logout</button> */}
+        <Navbar />
+        
     </div>
     )
 }
