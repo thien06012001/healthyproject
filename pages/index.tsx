@@ -10,6 +10,9 @@ import Feed2 from '../components/Feed2';
 import HowWeWork from '../components/HowWeWork';
 import FoodDemo from '../components/FoodDemo';
 import PeopleSay from '../components/PeopleSay';
+import Subscribe from '../components/Subscribe';
+import Contact from '../components/Contact';
+import { PhoneIcon,MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 const Home: NextPage = () => {
   // const [text, count] = useTypewriter({
   //   words: [
@@ -31,8 +34,14 @@ const Home: NextPage = () => {
           <HowWeWork />
           <FoodDemo />
         </main>
-        <main className='max-w-screen-2xl h-[674px] mx-auto mt-[100px] bg-gradient-to-b from-[#A1C94C] to-[#FFF8ED80]'>
+        <main className='w-screen h-[674px] mx-auto mt-[100px] bg-gradient-to-b from-[#A1C94C] to-[#FFF8ED80]'>
           <PeopleSay />
+        </main>
+        <main className='bg-[#A1C94CE5] rounded-3xl max-w-screen-xl h-[550px] mt-[150px] mx-auto'>
+          <Subscribe/>
+        </main>
+        <main>
+          <Contact />
         </main>
      </div>
   )
