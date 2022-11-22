@@ -19,8 +19,8 @@ function PeopleSay({}: Props) {
         </div>
       </div>
       <div className='grid grid-col mx-auto'>
-        <div className='w-[269px] h-[402px] bg-white '>
-        <div>
+        <div className='w-[269px] h-[402px] bg-white rounded-xl '>
+        <div className='mt-[-45px] ml-[20px]'>
           <Image src={people1}
                 className='w-[90px] h-[90px] absolute'
                 alt={''}/>
