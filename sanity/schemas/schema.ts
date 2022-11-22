@@ -1,5 +1,5 @@
 // First, we must import the schema creator
-// <reference types="@sanity/types/parts" />
+//<reference types="@sanity/types/parts" />
 import createSchema from 'part:@sanity/base/schema-creator'
 
 // Then import schema types from any plugins that might expose them

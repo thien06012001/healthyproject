@@ -18,21 +18,45 @@ function PeopleSay({}: Props) {
             let's read pure reviews from customers who bought our products.</p>
         </div>
       </div>
-      <div className='grid grid-col mx-auto mt-[100px]'>
-        <div className='w-[269px] h-[402px] bg-white rounded-xl '>
-        <div className='mt-[-45px] ml-[20px]'>
-          <Image src={people1}
-                className='w-[90px] h-[90px] absolute'
-                alt={''}/>
-        </div>
-          <div className='ml-[20px] w-[181px] h-[32px] mt-[150px]'>
+      <div className='grid grid-col mx-auto mt-[250px] ml-[40px]'>
+        <div className='flex flex-row'>
+          <div className='w-[269px] h-[402px] bg-white rounded-xl '>
+            <div className='mt-[-45px] ml-[20px]'>
+              <Image src={people1}
+                    className='w-[90px] h-[90px] absolute'
+                    alt={''}/>
+            </div>
+            <div className='ml-[20px] w-[181px] h-[32px] mt-[150px]'>
             <p className='text-[24px] font-semibold'>Dao Nguyen </p>
+            </div>
+            <div className='ml-[20px] w-[181px] h-[32px] mt-[20px]'>
+              <p className='text-[#999999] text-[14px] '>22 Years</p>
+            </div>
+            <div className='w-[221px] h-[168px] ml-[20px]'>
+              <p className='text-[16px] text-[#575757]'>The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. 
+                  I recommend this salad to all of you guys! because they really take care of the quality.</p>
+            </div>
           </div>
-          <div className='ml-[20px] w-[181px] h-[32px] mt-[20px]'>
-            <p className='text-gray-500 text-[14px]  opacity-[0.8]'>22 Years</p>
+          <div className='w-[269px] h-[402px] bg-white rounded-xl ml-[50px]'>
+            <div className='mt-[-45px] ml-[20px]'>
+              <Image src={people2}
+                    className='w-[90px] h-[90px] absolute'
+                    alt={''}/>
+            </div>
+            <div className='ml-[20px] w-[181px] h-[32px] mt-[150px]'>
+            <p className='text-[24px] font-semibold'>Truong Tung </p>
+            </div>
+            <div className='ml-[20px] w-[181px] h-[32px] mt-[20px]'>
+              <p className='text-[#999999] text-[14px] '>24 Years</p>
+            </div>
+            <div className='w-[221px] h-[168px] ml-[20px]'>
+              <p className='text-[16px] text-[#575757]'>The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. 
+                  I recommend this salad to all of you guys! because they really take care of the quality.</p>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
   )
 }
