@@ -37,7 +37,7 @@ function PeopleSay({}: Props) {
                   I recommend this salad to all of you guys! because they really take care of the quality.</p>
             </div>
           </div>
-          <div className='w-[269px] h-[402px] bg-white rounded-xl ml-[50px]'>
+          <div className='w-[269px] h-[402px] bg-white rounded-xl ml-[50px] opacity-[0.8]'>
             <div className='mt-[-45px] ml-[20px]'>
               <Image src={people2}
                     className='w-[90px] h-[90px] absolute'
