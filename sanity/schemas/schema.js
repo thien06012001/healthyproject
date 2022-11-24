@@ -6,18 +6,16 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
-import experience from './experience'
-import skill from './skill'
-import pageInfo from './pageInfo'
-import social from './social'
-import project from './project'
+import normalweight from './normalweight'
+import overweight from './overweight'
+import underweight from './underweight'
+import obese from './obese'
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-    skill,
-    pageInfo,
-    experience,
-    social,
-    project,
+    overweight,
+    normalweight,
+    underweight,
+    obese,
   ]),
 })

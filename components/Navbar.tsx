@@ -11,6 +11,7 @@ type Props = {}
 
 function Navbar({}: Props) {
     const user = useSelector(selectUser)
+    const router = useRouter()
     const dispatch = useDispatch()
     useEffect(() => {
       const unsubscribe = auth.onAuthStateChanged(userAuth => {
@@ -29,7 +30,6 @@ function Navbar({}: Props) {
       return unsubscribe
     }, [dispatch])
     
-    const router = useRouter()
   return (
     <div className='bg-[#ecf0f3] fixed top-0 w-[100%] z-10'>
         <div className='flex items-center p-1 flex-grow py-2'>
@@ -43,7 +43,7 @@ function Navbar({}: Props) {
             </div>
             <div className='flex flex-row items-center justify-center text-xs w-[70%]'>
                 <button className={styles.button}>About us</button>
-                <button className={styles.button}>Products</button>
+                <button onClick={() => router.push('/normalweight/products')} className={styles.button}>Products</button>
                 <button className={styles.button}>Blog</button>
                 <button className={styles.button} onClick={() => router.push('/BMI')}>Custom Meal</button>
             </div>

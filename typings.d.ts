@@ -13,49 +13,42 @@ interface Image{
     };
 }
 
-export interface PageInfo extends SanityBody{
-    _type: "pageInfo";
-    address: string;
-    backgroundInformation: string;
-    email: string;
-    role: string;
-    heroImage: Image;
+export interface UnderWeight extends SanityBody{
+    _type: "underweight";
     name: string;
-    phoneNumber: string;
-    profilePic: Image;
-}
-
-export interface Skill extends SanityBody{
-    _type: "skill";
+    price: number;
     image: Image;
-    progress: number;
-    title: string;
+    ingredients: string;
+    calories: number;
+    categories: string;
 }
 
-export interface Experience extends SanityBody{
-    _type: "experience";
-    company: string;
-    companyImage: Image;
-    dateStarted: date;
-    dateEnded: date;
-    isCurrentWorkingHere: boolean;
-    jobTitle: string;
-    points: string[];
-    technologies: Technology[];
-}
-
-export interface Project extends SanityBody{
-    title: string;
-    _type: "project";
+export interface NormalWeight extends SanityBody{
+    _type: "normalweight";
+    name: string;
+    price: number;
     image: Image;
-    linktoBuild: string;
-    summary: string;
-    technologies: Technology[];
+    ingredients: string;
+    calories: number;
+    categories: string;
 }
 
-export interface Social extends SanityBody{
-    url: string | undefined;
-    _type: "social";
-    title: string;
-    urlFor: string;
+export interface OverWeight extends SanityBody{
+    _type: "overweight";
+    name: string;
+    price: number;
+    image: Image;
+    ingredients: string;
+    calories: number;
+    categories: string;
+}
+
+export interface Obese extends SanityBody{
+    _type: "obese ";
+    name: string;
+    price: number;
+    image: Image;
+    ingredients: string;
+    calories: number;
+    categories: string;
 }

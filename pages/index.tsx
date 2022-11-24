@@ -12,8 +12,19 @@ import FoodDemo from '../components/FoodDemo';
 import PeopleSay from '../components/PeopleSay';
 import Subscribe from '../components/Subscribe';
 import Contact from '../components/Contact';
+import Products from '../components/Products';
 import { PhoneIcon,MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
-const Home: NextPage = () => {
+import { sanityClient } from '../sanity';
+import { OverWeight, UnderWeight, NormalWeight,Obese } from '../typings'
+import type { GetStaticProps,InferGetStaticPropsType } from 'next'
+import ProductFeed from '../components/ProductFeed';
+type Props = {
+  overweights: OverWeight[]
+  normalweights: NormalWeight[]
+  underweights: UnderWeight[]
+  obeses: Obese[]
+}
+const Home = ({overweights,underweights,normalweights,obeses}: Props) => {
   // const [text, count] = useTypewriter({
   //   words: [
   //     `Hi!`,
@@ -42,9 +53,40 @@ const Home: NextPage = () => {
         </main>
         <main>
           <Contact />
+          <ProductFeed normalweights={normalweights} />
         </main>
      </div>
   )
 }
 
 export default Home
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const query1 = `
+  *[_type == "normalweight"] 
+  `;
+
+  const query2 = `
+  *[_type == "overweight"] 
+  `;
+
+  const query3 = `
+  *[_type == "underweight"] 
+  `;
+
+  const query4 = `
+  *[_type == "obese"] 
+  `;
+  const overweights: OverWeight[] = await sanityClient.fetch(query2);
+  const normalweights: NormalWeight[] = await sanityClient.fetch(query1)
+  const obeses: Obese[] = await sanityClient.fetch(query4)
+  const underweights: UnderWeight[] = await sanityClient.fetch(query3)
+  return {
+    props: {
+      overweights,
+      normalweights,
+      underweights,
+      obeses,
+    },
+    revalidate: 10,
+  }
+};
