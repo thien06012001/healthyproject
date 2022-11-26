@@ -53,7 +53,6 @@ const Home = ({overweights,underweights,normalweights,obeses}: Props) => {
         </main>
         <main>
           <Contact />
-          <ProductFeed normalweights={normalweights} />
         </main>
      </div>
   )

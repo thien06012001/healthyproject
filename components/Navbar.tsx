@@ -35,14 +35,14 @@ function Navbar({}: Props) {
         <div className='flex items-center p-1 flex-grow py-2'>
             <div className='flex items-center flex-grow sm:flex-grow-0 mx-6 cursor-pointer w-[10%]'>
                 <Image 
-                    onClick={() => router.push('/HomePage')}
+                    onClick={() => router.push('/')}
                     src={Logo} 
                     alt='' 
                     width={70}
                     height = {70} />
             </div>
             <div className='flex flex-row items-center justify-center text-xs w-[70%]'>
-                <button className={styles.button}>About us</button>
+                <button onClick={() => router.push('/About')} className={styles.button}>About us</button>
                 <button onClick={() => router.push('/normalweight/products')} className={styles.button}>Products</button>
                 <button className={styles.button}>Blog</button>
                 <button className={styles.button} onClick={() => router.push('/BMI')}>Custom Meal</button>
