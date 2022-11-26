@@ -42,7 +42,7 @@ function explore({}: Props) {
             <Image src={Option} className='w-[114px] h-[114px] m-auto' alt={''}/>
             <div className='m-auto'>
               <p className='text-[55px] font-bold'>100+</p>
-              <p className='text-[#585858] text-[28px] '>Healthy Options</p> 
+              <p className='text-[#585858] text-[28px]'>Healthy Options</p> 
             </div>
           </div><div className='bg-[#CAD4DB] w-[406px] h-[164px] m-auto flex flex-row'>
             <Image src={Orders} className='w-[114px] h-[114px] m-auto' alt={''}/>
