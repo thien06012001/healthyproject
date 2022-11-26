@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import React, { useState } from 'react'
 import Link from 'next/link';
-import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter'
 import HomePage from './HomePage';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
@@ -12,12 +11,10 @@ import FoodDemo from '../components/FoodDemo';
 import PeopleSay from '../components/PeopleSay';
 import Subscribe from '../components/Subscribe';
 import Contact from '../components/Contact';
-import Products from '../components/Products';
-import { PhoneIcon,MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { sanityClient } from '../sanity';
 import { OverWeight, UnderWeight, NormalWeight,Obese } from '../typings'
-import type { GetStaticProps,InferGetStaticPropsType } from 'next'
-import ProductFeed from '../components/ProductFeed';
+import type { GetStaticProps } from 'next'
+
 type Props = {
   overweights: OverWeight[]
   normalweights: NormalWeight[]
