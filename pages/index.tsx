@@ -14,6 +14,7 @@ import Contact from '../components/Contact';
 import { sanityClient } from '../sanity';
 import { OverWeight, UnderWeight, NormalWeight,Obese } from '../typings'
 import type { GetStaticProps } from 'next'
+import ProductFeed from '../components/ProductFeed';
 
 type Props = {
   overweights: OverWeight[]
@@ -51,6 +52,7 @@ const Home = ({overweights,underweights,normalweights,obeses}: Props) => {
         <main>
           <Contact />
         </main>
+        
      </div>
   )
 }
