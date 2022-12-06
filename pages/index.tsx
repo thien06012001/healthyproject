@@ -14,7 +14,7 @@ import Contact from '../components/Contact';
 import { sanityClient } from '../sanity';
 import { OverWeight, UnderWeight, NormalWeight,Obese } from '../typings'
 import type { GetStaticProps } from 'next'
-import ProductFeed from '../components/ProductFeed';
+import ProductFeed from '../components/AllWeight/ProductFeed';
 
 type Props = {
   overweights: OverWeight[]

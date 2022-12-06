@@ -1,12 +1,12 @@
 import { GetStaticProps } from 'next'
 import React from 'react'
 import Navbar from '../../../components/Navbar'
-import ProductFeed from '../../../components/AllWeight/ProductFeed'
 import { sanityClient } from '../../../sanity'
 import { NormalWeight, Obese, OverWeight, UnderWeight } from '../../../typings'
 import category from '../../../public/assets/category.png'
 import Image from 'next/image'
 import NavForProduct from '../../../components/NavForProduct'
+import ProductFeed_Starch from '../../../components/AllWeight/ProductFeed_Starch'
 import { useRouter } from 'next/router'
 type Props = {
     overweights: OverWeight[]
@@ -15,7 +15,7 @@ type Props = {
     obeses: Obese[]
 }
 
-function Category({normalweights, underweights, overweights, obeses}: Props) {
+function Starch({normalweights, underweights, overweights, obeses}: Props) {
     const router = useRouter()
   return (
     <div className='h-full bg-lime-50 flex flex-col '>
@@ -57,7 +57,7 @@ function Category({normalweights, underweights, overweights, obeses}: Props) {
             </div>
             
             <div className='m-auto w-[80%]'>
-                <ProductFeed underweights={underweights} normalweights={normalweights} overweights={overweights} obeses={obeses}/>
+                <ProductFeed_Starch underweights={underweights} normalweights={normalweights} overweights={overweights} obeses={obeses}/>
             </div>
             
         </main>
@@ -66,7 +66,7 @@ function Category({normalweights, underweights, overweights, obeses}: Props) {
   )
 }
 
-export default Category
+export default Starch
 export const getStaticProps: GetStaticProps<Props> = async () => {
     const query1 = `
     *[_type == "normalweight"] 

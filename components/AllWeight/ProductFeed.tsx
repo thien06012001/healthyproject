@@ -1,10 +1,9 @@
 import React from 'react'
-import normalweight from '../sanity/schemas/normalweight'
-import { NormalWeight, UnderWeight, OverWeight, Obese } from '../typings'
-import NormalWeights from './NormalWeight'
-import UnderWeights from './UnderWeight'
-import OverWeights from './OverWeight'
-import Obeses from './Obese'
+import { NormalWeight, UnderWeight, OverWeight, Obese } from '../../typings'
+import NormalWeights from '../NormalWeight'
+import UnderWeights from '../UnderWeight'
+import OverWeights from '../OverWeight'
+import Obeses from '../Obese'
 type Props = {
     normalweights: NormalWeight[]
     underweights: UnderWeight[]
