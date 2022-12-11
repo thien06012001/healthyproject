@@ -1,5 +1,5 @@
 .button {
-    @apply rounded-full mx-auto;
+    @apply rounded-full mx-auto text-base;
     /* padding: 1.5em 5em; */
     background: #efefef;
     width: 200px;

@@ -43,7 +43,7 @@ function Checkout() {
                 /> */}
                 <div className='flex flex-col p-5 space-y-10 bg-[#efefef]'>
                     <h1 className='text-3xl border-b pb-4'>
-                        {items.length === 0 ? 'Your Amazon Basket is empty' : 'Shopping Basket'}
+                        {items.length === 0 ? 'Your Basket is empty' : 'Shopping Basket'}
                     </h1>
 
                     {items.map((item : any,i :any) => (

@@ -15,7 +15,8 @@ import { sanityClient } from '../sanity';
 import { OverWeight, UnderWeight, NormalWeight,Obese } from '../typings'
 import type { GetStaticProps } from 'next'
 import ProductFeed from '../components/AllWeight/ProductFeed';
-
+import Icon from '../public/assets/Logo.png'
+import Head from 'next/head';
 type Props = {
   overweights: OverWeight[]
   normalweights: NormalWeight[]
@@ -35,9 +36,14 @@ const Home = ({overweights,underweights,normalweights,obeses}: Props) => {
   // })
   return (
     <div className='bg-lime-50'>
+      <Head>
+        <title>Healthy Food</title>
+        <link rel="icon" href={Icon.src} />
+      </Head>
         <Navbar />
         <main className='w-screen mx-auto'>
           <Banner />
+          
           <Feed />
           <Feed2/>
           <HowWeWork />

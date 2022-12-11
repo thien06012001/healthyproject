@@ -43,7 +43,7 @@ function Navbar({}: Props) {
                     width={70}
                     height = {70} />
             </div>
-            <div className='flex flex-row items-center justify-center text-base w-[70%]'>
+            <div className='flex flex-row items-center justify-center w-[70%]'>
                 <button onClick={() => router.push('/About')} className={styles.button}>About us</button>
                 <button onClick={() => router.push('/Category/All/AllCategory')} className={styles.button}>Products</button>
                 <button onClick={() => router.push('/BlogBegin')} className={styles.button}>Blog</button>
