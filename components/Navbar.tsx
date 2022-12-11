@@ -7,12 +7,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { login, logout, selectUser } from '../slices/userSlice'
 import { auth } from '../firebase'
 import {Bars4Icon, MagnifyingGlassIcon, ShoppingCartIcon,  GifIcon, GiftIcon} from '@heroicons/react/24/solid'
+import { selectItems } from '../slices/basketSlice'
 type Props = {}
 
 function Navbar({}: Props) {
     const user = useSelector(selectUser)
     const router = useRouter()
     const dispatch = useDispatch()
+    const items = useSelector(selectItems)
     useEffect(() => {
       const unsubscribe = auth.onAuthStateChanged(userAuth => {
         if(userAuth){
@@ -41,10 +43,10 @@ function Navbar({}: Props) {
                     width={70}
                     height = {70} />
             </div>
-            <div className='flex flex-row items-center justify-center text-xs w-[70%]'>
+            <div className='flex flex-row items-center justify-center text-base w-[70%]'>
                 <button onClick={() => router.push('/About')} className={styles.button}>About us</button>
                 <button onClick={() => router.push('/Category/All/AllCategory')} className={styles.button}>Products</button>
-                <button className={styles.button}>Blog</button>
+                <button onClick={() => router.push('/BlogBegin')} className={styles.button}>Blog</button>
                 <button className={styles.button} onClick={() => router.push('/BMI')}>Custom Meal</button>
             </div>
             <div className='flex justify-end text-xs space-x-6 mx-6 w-[20%] whitespace-nowrap'>
@@ -57,17 +59,17 @@ function Navbar({}: Props) {
                     </span>
                     <GiftIcon className='h-10 cursor-pointer' />
                 </div>
-                <div className='relative link flex items-center'>
+                <div onClick={() => router.push('/checkout')} className='relative link flex items-center'>
                     <span 
-                        className='absolute top-0 right-0 md:right-10 h-4 w-4 
+                        className='absolute bottom-[60%] left-[69%] md:right-10 h-4 w-4 
                         bg-green-400 text-center rounded-full text-black font-bold'
                     >
-                        0
+                        {items.length}
                     </span>
                     <ShoppingCartIcon className='h-10 cursor-pointer' />
                 </div>
             {!user ? (
-                <button onClick={() => router.push('/HomePage')} className={styles.button}>Login</button>
+                <button onClick={() => router.push('/Login')} className={styles.button}>Login</button>
             ) : (<button className={styles.button} onClick={() => auth.signOut()}>Logout</button>) }
                 
             </div>

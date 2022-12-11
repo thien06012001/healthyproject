@@ -6,7 +6,7 @@ type Props = {}
 function NavForProduct({}: Props) {
     const router = useRouter()
   return (
-    <div className=' bg-lime-400 h-[80px]  flex flex-row items-center justify-center text-xs w-full m-auto'> 
+    <div className=' bg-lime-400 h-[80px] flex flex-row items-center justify-center text-base w-full m-auto'> 
        
         <button onClick={() => router.push('/Category/All/AllCategory')} className={styles.button}>All Weight</button>
         <button onClick={() => router.push('/Category/UnderWeight/AllCategory')} className={styles.button}>Under Weight</button>

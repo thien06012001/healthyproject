@@ -8,9 +8,11 @@ import deliver from '../public/assets/deliver.png'
 import dishes from '../public/assets/dishes.png'
 import enjoy from '../public/assets/enjoy.png'
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 type Props = {}
 
 function HowWeWork({}: Props) {
+    const router = useRouter()
   return (
     <div className='bg-lime-50'>
         <div className='top-24 uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl justify-center items-center text-center mt-[100px]
@@ -27,7 +29,7 @@ function HowWeWork({}: Props) {
                         </div>
                         {/* <div className='text-center my-[40px] bg-[#A1C94CE5] w-[278px] h-[56px] justify-center
                             rounded-3xl ml-[440px] mt-[20px]'> */}
-                                <button className='text-white text-2xl font-bold uppercase text-center my-[40px] bg-[#A1C94CE5] w-[278px] h-[56px] 
+                                <button onClick={() => router.push('/Category/All/AllCategory')} className='text-white text-2xl font-bold uppercase text-center my-[40px] bg-[#A1C94CE5] w-[278px] h-[56px] 
                             rounded-3xl ml-[440px] mt-[20px] cursor-pointer'>Buy Now</button>             
                         {/* </div> */}
                     </div>

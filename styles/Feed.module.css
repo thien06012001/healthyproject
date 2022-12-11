@@ -1,5 +1,5 @@
 .Feed2 {
-    @apply bg-white relative w-80 h-96 border border-hidden rounded-3xl mx-auto;
+    @apply bg-white relative w-80 h-[400px] border border-hidden rounded-3xl mx-auto;
 
     transition: .2s ease-in-out;
     box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),

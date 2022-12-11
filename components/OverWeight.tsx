@@ -3,6 +3,9 @@ import { urlFor } from '../sanity'
 import { OverWeight} from '../typings'
 import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/24/solid';
+import { useDispatch } from 'react-redux';
+import { addToBasket } from '../slices/basketSlice';
+import styles from '../styles/Addbutton.module.css'
 type Props = {
     overweight: OverWeight
 }
@@ -12,9 +15,23 @@ function OverWeight({overweight}: Props) {
   const MIN_RATINGS = 1;
   const RANDOM = Math.floor(Math.random() * (MAX_RATINGS - MIN_RATINGS +1)) + MIN_RATINGS
   const [rating,setRating] = useState(RANDOM)
+  const dispatch = useDispatch()
+  const addItemToBasket = () => {
+    const product = {
+      id: overweight._id,
+      name: overweight.name,
+      price: overweight.price,
+      calories: overweight.calories,
+      rating,
+      ingredients: overweight.ingredients,
+      categories: overweight.categories,
+      image: urlFor(overweight.image).url(),
+
+    }
+    //Sending the product as an action to the REDUX store.. basketSlice
+    dispatch(addToBasket(product))
+  }
   return (
- 
-      
         <div className='relative flex flex-col m-5 w-[340px] h-[500px] rounded-xl bg-[#FFE8C8] p-10'>
           <p className='absolute text-gray-500 top-[2%] left-[3%] font-bold'>{overweight.categories}</p>
          <Image className='w-[200px] h-[200px] mx-auto' src={urlFor(overweight.image).url()} height={200} width={200} alt={''}/>
@@ -39,7 +56,7 @@ function OverWeight({overweight}: Props) {
                 ${overweight.price}
             </div>
             <div className=''>
-              <button className='m-auto font-[Inter] bg-white w-[100px] h-[30px]  rounded-lg text-[16px] font-bold text-[#3E3E3E] '>Add to cart</button>
+              <button onClick={addItemToBasket} className={styles.button}>Add to cart</button>
             </div>
           </div>
        </div> 

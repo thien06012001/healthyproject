@@ -4,9 +4,12 @@ import Food2 from '../public/assets/Food2.png'
 import Food3 from '../public/assets/Food3.png'
 import Image from 'next/image'
 import { ArrowRightIcon } from '@heroicons/react/24/solid'
+import { useRouter } from 'next/router'
+import styles from '../styles/ViewMore.module.css'
 type Props = {}
 
 function FoodDemo({}: Props) {
+    const router = useRouter()
   return (
     <div>
         <div className='top-24 uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl justify-center 
@@ -50,8 +53,8 @@ function FoodDemo({}: Props) {
                     <div className='mt-[5px]'>
                         <p className='text-white text-3xl font-extrabold'>$5.49</p>
                     </div>
-                    <button className='flex flex-row text-white text-lg my-auto text-center justify-center bg-[#FB9333] w-[180px] h-[55px] 
-                            rounded-3xl ml-[170px] mt-[100px] cursor-pointer'>
+                    <button onClick={() => router.push('/Category/All/AllCategory')}
+                     className={styles.button}>
                             <span className='my-auto'>View more</span>  <ArrowRightIcon className='my-auto w-10 h-5'/></button>
                 </div>
             </div>
