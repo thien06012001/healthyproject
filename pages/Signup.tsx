@@ -21,6 +21,7 @@ function Signup() {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
+        router.push('/')
         console.log(user)
         
         // ...
@@ -31,7 +32,7 @@ function Signup() {
         alert(errorMessage)
         // ..
       });
-      router.push('/HomePage')
+      
     };
     
     return (
