@@ -47,7 +47,7 @@ function Navbar({}: Props) {
                 <button onClick={() => router.push('/About')} className={styles.button}>About us</button>
                 <button onClick={() => router.push('/Category/All/AllCategory')} className={styles.button}>Products</button>
                 <button onClick={() => router.push('/BlogBegin')} className={styles.button}>Blog</button>
-                <button className={styles.button} onClick={() => router.push('/BMI')}>Custom Meal</button>
+                <button className={styles.button} onClick={() => router.push('/BMI')}>BMI calculate</button>
             </div>
             <div className='flex justify-end text-xs space-x-6 mx-6 w-[20%] whitespace-nowrap'>
                 <div className='relative link flex items-center'>
