@@ -8,6 +8,8 @@ import category from '../../../public/assets/category.png'
 import Image from 'next/image'
 import NavForProduct from '../../../components/NavForProduct'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
+import Icon from '../../../public/assets/Logo.png'
 type Props = {
     underweights: UnderWeight[]
 }
@@ -16,6 +18,10 @@ function Category({underweights}: Props) {
     const router = useRouter()
   return (
     <div className='h-full bg-lime-50 flex flex-col '>
+         <Head>
+          <title>All Under Weight Products</title>
+          <link rel="icon" href={Icon.src} />
+        </Head>
         <Navbar/>
         <div className='text-center items-center justify-center flex'>
             <h2 className='absolute m-auto text-[55px] text-[#38962F] font-bold box-'>OUR MENU FOR TODAY</h2>

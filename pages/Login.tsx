@@ -4,6 +4,8 @@ import styles from '../styles/Login.module.css'
 import { auth } from '../firebase';
 import { useRouter } from 'next/router'
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import Icon from '../public/assets/Logo.png'
+import Head from 'next/head';
 function Login() {
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
@@ -30,6 +32,10 @@ function Login() {
   }
     return (
     <div className={styles.login_body}>
+      <Head>
+        <title>Sign In</title>
+        <link rel="icon" href={Icon.src} />
+      </Head>
         <div className={styles.login_box}>
             <h2 className={styles.neon}>Sign In</h2>
             <form action=''>

@@ -7,6 +7,8 @@ import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
 import Navbar from '../components/Navbar'
 import { selectUser } from '../slices/userSlice'
+import Head from 'next/head';
+import Icon from '../public/assets/Logo.png'
 function Checkout() {
     const items = useSelector(selectItems)
     const total = useSelector(selectTotal)
@@ -31,6 +33,10 @@ function Checkout() {
     }
   return (
     <div className='bg-lime-50'>
+        <Head>
+            <title>Check out</title>
+            <link rel="icon" href={Icon.src} />
+        </Head>
         <Navbar />
         <main className='lg:flex max-w-screen-2xl h-full mx-auto'>
             {/* Left */}

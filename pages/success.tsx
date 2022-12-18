@@ -3,11 +3,17 @@ import Navbar from '../components/Navbar'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { useRouter } from 'next/router'
 import styles from '../styles/Nav.module.css'
+import Icon from '../public/assets/Logo.png'
+import Head from 'next/head';
 function success() {
   
     const router = useRouter()
     return (
     <div className='bg-lime-50 h-screen'>
+        <Head>
+            <title>Success</title>
+            <link rel="icon" href={Icon.src} />
+        </Head>
         <Navbar />
         <main className='max-w-screen-lg mx-auto'>
             <div className='flex flex-col p-10 bg-white'>

@@ -5,6 +5,8 @@ import { auth } from '../firebase';
 import { createUserWithEmailAndPassword} from 'firebase/auth';
 import styles from '../styles/Login.module.css'
 import { useRouter } from 'next/router';
+import Icon from '../public/assets/Logo.png'
+import Head from 'next/head';
 
 function Signup() {
     const emailRef = useRef(null);
@@ -37,6 +39,10 @@ function Signup() {
     
     return (
     <div className={styles.login_body}>
+      <Head>
+        <title>Sign Up</title>
+        <link rel="icon" href={Icon.src} />
+      </Head>
         <div className={styles.login_box}>
             <h2 className={styles.neon}>Sign Up</h2>
             <form action=''>

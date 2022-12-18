@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import React, { useState } from 'react'
 import Link from 'next/link';
-import HomePage from './HomePage';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Feed from '../components/Feed';

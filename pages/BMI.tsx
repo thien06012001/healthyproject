@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import styles from '../styles/BMI.module.css'
 import { CalculatorIcon } from '@heroicons/react/24/solid';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
+import Icon from '../public/assets/Logo.png'
 function BMI() {
     const [weight, setWeight] = useState<number | any>(0)
     const [height, setHeight] = useState<number | any>(0)
@@ -43,6 +45,10 @@ function BMI() {
   }
     return (
       <div className={styles.body}>
+          <Head>
+            <title>BMI calculator</title>
+            <link rel="icon" href={Icon.src} />
+          </Head>
           <div className={styles.container}>
             <p className={styles.title}>BMI calculator</p>
             <form onSubmit={calcBmi} className={styles.wrapper}>
