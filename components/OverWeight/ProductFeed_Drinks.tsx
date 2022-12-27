@@ -1,21 +1,25 @@
-import React from 'react'
-import { NormalWeight, UnderWeight, OverWeight, Obese } from '../../typings'
-import NormalWeights from '../NormalWeight'
-import UnderWeights from '../UnderWeight'
-import OverWeights from '../OverWeight'
-import Obeses from '../Obese'
+import React from "react";
+import { NormalWeight, UnderWeight, OverWeight, Obese } from "../../typings";
+import NormalWeights from "../NormalWeight";
+import UnderWeights from "../UnderWeight";
+import OverWeights from "../OverWeight";
+import Obeses from "../Obese";
 type Props = {
-    overweights: OverWeight[]
-}
+  overweights: OverWeight[];
+};
 
-function ProductFeed_Drinks({overweights}: Props) {
+function ProductFeed_Drinks({ overweights }: Props) {
   return (
-    <div className='grid grid-cols-3 m-auto relative'>
-        {overweights.map((overweight) => (
-            overweight.categories === 'Drinks' ?  <OverWeights key={overweight._id} overweight={overweight} /> : <></>
-        ))}
+    <div className="grid grid-cols-3 m-auto relative">
+      {overweights.map((overweight) =>
+        overweight.categories === "Drinks" ? (
+          <OverWeights key={overweight._id} overweight={overweight} />
+        ) : (
+          <></>
+        )
+      )}
     </div>
-  )
+  );
 }
 
-export default ProductFeed_Drinks
+export default ProductFeed_Drinks;

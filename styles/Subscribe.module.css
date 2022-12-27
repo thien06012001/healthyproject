@@ -1,18 +1,10 @@
 .input::placeholder {
-    color: #575757;
-    opacity:0.7;
-    padding-left: 10px ;
-    opacity: 0.7;
-    font-size: 18px
+  @apply text-[#575757] opacity-70 pl-[10px] text-[18px];
 }
-.input{
-    @apply rounded-full mt-[50px] w-[700px] h-[80px];
-    outline: none;
-    font-size: 20px;
-    text-align: center;
+.input {
+  @apply rounded-full mt-[50px] w-[700px] h-[80px] text-center text-[20px]; 
+  outline: none;
 }
-.input:placeholder-shown{
-    @apply text-[18px] ;
-    padding-left: 20px;
-
+.input:placeholder-shown {
+  @apply pl-[20px] text-[18px];
 }

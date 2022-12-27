@@ -1,223 +1,147 @@
 @property --rotate {
-	syntax: "<angle>";
-	initial-value: 132deg;
-	inherits: false;
-  }
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
 .neon {
-  @apply font-bold;
-	font-size: 20px;
-	
+  @apply font-bold text-[20px];
 }
 .login_body {
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-    background: #dde1e7;
-	  height: 100vh;
+  @apply m-0 p-0 h-[100vh] bg-[#dde1e7];
+  font-family: sans-serif;
 }
 .login_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    border: none;
-    outline: none;
-    transform: translate(-50%, -50%);
-    background: #dde1e7;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 2px #5f5f5f,
-                0px 0px 0px 5px #ecf0f3,
-                8px 8px 15px #a7aaaf,
-                -8px -8px 15px #ffffff;
-    border-radius: 10px;
-	
+  @apply absolute top-[50%] left-[50%] w-[400px] h-[40px] bg-[#dde1e7] p-[40px];
+  border: none;
+  outline: none;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf,
+    -8px -8px 15px #ffffff;
+  border-radius: 10px;
 }
 
-  
 .login_box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: black;
-    text-align: center;
+  @apply p-0 text-center text-black;
+  margin: 0 0 30px;
+  padding: 0;
 }
 
 .login_box .user_box {
-    position: relative;
+  @apply relative;
 }
 
 .user_input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #595959;
-    background: #dde1e7;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    background: transparent;
-    
+  @apply w-[100%] text-[16px] text-[#595959] bg-[#dde1e7] mb-[30px];
+  padding: 10px 0;
+  background: #dde1e7;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
 }
 
 .user_label {
-	position: absolute;
-	top:0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 16px;
-	color: black;
-	pointer-events: none;
-	transition: .5s;
+  @apply absolute text-[16px] text-black top-0 left-0;
+  padding: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.user_label
- {
-	top: -20px;
-	left: 0;
-	color: black;
-	font-size: 12px;
+.user_label {
+  @apply top-[-20px] left-0 text-[12px];
 }
 
-.button  {
-  @apply rounded-xl h-[40px] w-[120px];
-    position: relative;
-    display: inline-block;
-    /* padding: 10px 20px; */
-    text-align: center;
-    margin: auto;
-    border: none;
-    color: #444;
-    font-weight: 700;
-    outline: none;
-    background-color: #efefef;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    letter-spacing: 4px;
-    transition : .2s ease-in-out;
-    box-shadow : -6px -6px 14px rgba(255, 255, 255, .7),
-                -6px -6px 10px rgba(255, 255, 255, .5),
-                6px 6px 8px rgba(255, 255, 255, .075),
-                6px 6px 10px rgba(0, 0, 0, .15);
+.button {
+  @apply rounded-xl h-[40px] w-[120px] relative inline-block text-center m-auto text-[#444] bg-[#efefef] text-[16px] uppercase mt-[40px];
+  border: none;
+  font-weight: 700;
+  outline: none;
+  letter-spacing: 4px;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-              -2px -2px 4px rgba(255, 255, 255, .4),
-              2px 2px 2px rgba(255, 255, 255, .05),
-              2px 2px 4px rgba(0, 0, 0, .1);
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .button:active {
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-              inset -2px -2px 4px rgba(255, 255, 255, .5),
-              inset 2px 2px 2px rgba(255, 255, 255, .075),
-              inset 2px 2px 4px rgba(0, 0, 0, .15);
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button_homepage  {
-  @apply rounded-xl;
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 40px;
-    border: none;
-    color: #444;
-    font-weight: 700;
-    outline: none;
-    background-color: #efefef;
-    font-size: 16px;
-    text-transform: uppercase;
-    /* margin-top: 40px; */
-    letter-spacing: 4px;
-    transition : .2s ease-in-out;
-    box-shadow : -6px -6px 14px rgba(255, 255, 255, .7),
-                -6px -6px 10px rgba(255, 255, 255, .5),
-                6px 6px 8px rgba(255, 255, 255, .075),
-                6px 6px 10px rgba(0, 0, 0, .15);
+.button_homepage {
+  @apply rounded-xl relative inline-block m-[40px] text-[#444] bg-[#efefef] text-[16px] uppercase;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  letter-spacing: 4px;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .button_homepage:hover {
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-              -2px -2px 4px rgba(255, 255, 255, .4),
-              2px 2px 2px rgba(255, 255, 255, .05),
-              2px 2px 4px rgba(0, 0, 0, .1);
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .button_homepage:active {
-  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-              inset -2px -2px 4px rgba(255, 255, 255, .5),
-              inset 2px 2px 2px rgba(255, 255, 255, .075),
-              inset 2px 2px 4px rgba(0, 0, 0, .15);
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-  .signup_button {
-	  @apply rounded-xl h-[40px] w-[120px] pt-[7px];
-    position: relative;
-    display: inline-block;
-    /* padding: 10px 20px; */
-    text-align: center;
-    margin: auto;
-    border: none;
-    color: #444;
-    font-weight: 700;
-    outline: none;
-    background-color: #efefef;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    letter-spacing: 4px;
-    transition : .2s ease-in-out;
-    box-shadow : -6px -6px 14px rgba(255, 255, 255, .7),
-                -6px -6px 10px rgba(255, 255, 255, .5),
-                6px 6px 8px rgba(255, 255, 255, .075),
-                6px 6px 10px rgba(0, 0, 0, .15);
-  }
+.signup_button {
+  @apply rounded-xl h-[40px] w-[120px] pt-[7px] text-center relative inline-block m-auto text-[#444] bg-[#efefef] text-[16px] uppercase mt-[40px];
+  border: none;
+  font-weight: 700;
+  outline: none;
+  letter-spacing: 4px;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
 
-  .signup_button:hover {
-    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-                -2px -2px 4px rgba(255, 255, 255, .4),
-                2px 2px 2px rgba(255, 255, 255, .05),
-                2px 2px 4px rgba(0, 0, 0, .1);
-  }
-  .signup_button:active {
-    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
-                inset -2px -2px 4px rgba(255, 255, 255, .5),
-                inset 2px 2px 2px rgba(255, 255, 255, .075),
-                inset 2px 2px 4px rgba(0, 0, 0, .15);
-  }
+.signup_button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.signup_button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
 
-  .body {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    text-align: center;
-    background: #dde1e7;
-  }
-  .content {
-    @apply items-center justify-center;
-    width: 330px;
-    background: #dde1e7;
-    
-    border-radius: 10px;
-    padding: 40px 30px;
-    box-shadow: -3px -3px 7px #ffffff73,
-                2px 2px 5px rgba(94, 104, 121, 0.288);
-  }
+.body {
+  @apply m-0 p-0 grid h-[100vh] text-center;
+  box-sizing: border-box;
+  place-items: center;
+  background: #dde1e7;
+}
+.content {
+  @apply items-center justify-center w-[330px];
+  background: #dde1e7;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
 
-  .image {
-    width: 90px;
-    height: 90px;
-    margin-top: -100px;
-    border-radius: 50px;
-    box-shadow: 
-
-      0px 0px 2px #5f5f5f,
-      0px 0px 0px 5px #ecf0f3,
-      8px 8px 15px #a7aaaf,
-      -8px -8px 15px #ffffff
-  ;
-  }
+.image {
+  @apply w-[90px] h-[90px] mt-[-100px];
+  border-radius: 50px;
+  box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf,
+    -8px -8px 15px #ffffff;
+}

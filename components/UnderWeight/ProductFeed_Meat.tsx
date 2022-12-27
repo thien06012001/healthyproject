@@ -1,23 +1,25 @@
-import React from 'react'
-import { NormalWeight, UnderWeight, OverWeight, Obese } from '../../typings'
-import NormalWeights from '../NormalWeight'
-import UnderWeights from '../UnderWeight'
-import OverWeights from '../OverWeight'
-import Obeses from '../Obese'
+import React from "react";
+import { NormalWeight, UnderWeight, OverWeight, Obese } from "../../typings";
+import NormalWeights from "../NormalWeight";
+import UnderWeights from "../UnderWeight";
+import OverWeights from "../OverWeight";
+import Obeses from "../Obese";
 type Props = {
-   
-    underweights: UnderWeight[]
-    
-}
+  underweights: UnderWeight[];
+};
 
-function ProductFeed_Meat({underweights}: Props) {
+function ProductFeed_Meat({ underweights }: Props) {
   return (
-    <div className='grid grid-cols-3 m-auto relative'>
-        {underweights.map((underweight) => (
-            underweight.categories === 'Meat' ? <UnderWeights key={underweight._id} underweight={underweight} /> : <></>
-        ))}
+    <div className="grid grid-cols-3 m-auto relative">
+      {underweights.map((underweight) =>
+        underweight.categories === "Meat" ? (
+          <UnderWeights key={underweight._id} underweight={underweight} />
+        ) : (
+          <></>
+        )
+      )}
     </div>
-  )
+  );
 }
 
-export default ProductFeed_Meat
+export default ProductFeed_Meat;
