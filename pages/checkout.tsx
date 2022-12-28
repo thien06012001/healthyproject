@@ -72,8 +72,7 @@ function Checkout() {
                 Subtotal({items.length} items):{" "}
                 <span className="font-bold">${total}</span>
               </h2>
-
-              <button
+              {!session ? <div className="text-center opacity-60 text-[14px]">Sign in to checkout</div> : <button
                 role="link"
                 type="submit"
                 onClick={createCheckoutSession}
@@ -84,8 +83,9 @@ function Checkout() {
                                       "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
                                     }`}
               >
-                {!session ? "Sign in to checkout" : "Checkout"}
-              </button>
+                Checkout
+              </button>}
+              
             </>
           )}
         </div>
