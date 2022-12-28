@@ -42,17 +42,17 @@ function Contact({}: Props) {
           </p>
           <div className="flex flex-row">
             <MapPinIcon className="w-[22px] h-[18px] text-[#FB9333] animate-pulse" />
-            <p className="text-[#575757] text-[16px]">
+            <p className="text-[#575757] text-[16px] px-2">
               District 7, Ho Chi Minh City, <br /> Vietnam
             </p>
           </div>
           <div className="flex flex-row">
             <EnvelopeIcon className="w-[22px] h-[18px] text-[#FB9333] animate-pulse" />
-            <p className="text-[#575757] text-[16px]">BMI@hello.com</p>
+            <p className="text-[#575757] text-[16px] px-2">BMI@hello.com</p>
           </div>
           <div className="flex flex-row">
             <PhoneIcon className="w-[22px] h-[18px] text-[#FB9333] animate-pulse" />
-            <p className="text-[#575757] text-[16px]">+84 936 846 364</p>
+            <p className="text-[#575757] text-[16px] px-2">+84 936 846 364</p>
           </div>
         </div>
         <div className="mx-auto ">

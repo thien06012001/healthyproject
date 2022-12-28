@@ -25,7 +25,6 @@ function Signup() {
         // Signed in
         const user = userCredential.user;
         router.push("/");
-        console.log(user);
 
         // ...
       })

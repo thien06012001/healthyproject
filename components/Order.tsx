@@ -8,14 +8,14 @@ function Order({id, amount, amountShipping, items, timestamp, images}:any) {
         text-sm text-gray-600'>
             <div>
                 <p className='font-bold text-xs'>
-                    ORDER PLACE
+                    ORDER DATE
                 </p>
                 <p>{moment.unix(timestamp).format('DD MM YYYY')}</p>
             </div>
             <div>
                 <p className='text-xs font-bold'>TOTAL</p>
                 <p>
-                    £{amount} - Next Day Delivery {' '}
+                    £{amount} - Shipping fee {' '}
                     £{amountShipping} 
                 </p>
             </div>

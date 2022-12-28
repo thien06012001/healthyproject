@@ -21,8 +21,6 @@ function Login() {
         // Signed in
         const user = userCredential.user;
         router.push("/");
-        console.log(user);
-        // ...
       })
       .catch((error) => {
         const errorCode = error.code;

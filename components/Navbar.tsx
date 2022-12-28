@@ -6,7 +6,7 @@ import styles from "../styles/Nav.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "../slices/userSlice";
 import { auth } from "../firebase";
-import { ShoppingCartIcon, GiftIcon } from "@heroicons/react/24/solid";
+import { ShoppingCartIcon, GiftIcon, ClipboardDocumentListIcon } from "@heroicons/react/24/solid";
 import { selectItems } from "../slices/basketSlice";
 type Props = {};
 
@@ -69,14 +69,9 @@ function Navbar({}: Props) {
           </button>
         </div>
         <div className="flex justify-end text-xs space-x-6 mx-6 w-[20%] whitespace-nowrap">
-          <div className="relative link flex items-center">
-            <span
-              className="absolute top-[5px] right-[-5px] md:right-10 h-4 w-4 
-                        bg-green-400 text-center rounded-full text-black font-bold"
-            >
-              0
-            </span>
-            <GiftIcon className="h-10 cursor-pointer" />
+          <div className="m-auto">
+            {!user ? <></> : <ClipboardDocumentListIcon className="h-10 cursor-pointer" onClick={() => router.push('/orders')} />}
+            
           </div>
           <div
             onClick={() => router.push("/checkout")}
@@ -98,7 +93,7 @@ function Navbar({}: Props) {
               Login
             </button>
           ) : (
-            <button className={styles.button} onClick={() => auth.signOut()}>
+            <button className={styles.button} onClick={() => auth.signOut() && router.push('/')}>
               Logout
             </button>
           )}
