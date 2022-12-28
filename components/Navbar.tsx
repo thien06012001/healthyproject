@@ -90,11 +90,11 @@ function Navbar({}: Props) {
               onClick={() => router.push("/Login")}
               className={styles.button}
             >
-              Login
+              Sign In
             </button>
           ) : (
             <button className={styles.button} onClick={() => auth.signOut() && router.push('/')}>
-              Logout
+              Sign Out
             </button>
           )}
         </div>
