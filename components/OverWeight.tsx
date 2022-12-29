@@ -52,11 +52,11 @@ function OverWeight({ overweight }: Props) {
             50+ orders
           </p>
         </div>
-        <div className="flex flex-row w-[50%]">
+        <div className="flex flex-row justify-center w-[50%]">
           {Array(rating)
             .fill(rating)
             .map((_, i) => (
-              <StarIcon className="h-4 text-yellow-500" />
+              <StarIcon className="h-4 text-yellow-500 " />
             ))}
         </div>
       </div>
