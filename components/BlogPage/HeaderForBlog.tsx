@@ -1,7 +1,7 @@
 import React from "react";
 import { CalendarDaysIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import BlogPic1 from "../public/assets/BlogPic1.png";
+import BlogPic1 from "../../public/assets/BlogPic1.png";
 
 type Props = {};
 function HeaderForBlog({}: Props) {

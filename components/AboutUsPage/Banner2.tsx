@@ -1,5 +1,5 @@
 import React from "react";
-import NewBanner from "../public/assets/NewBanner.png";
+import NewBanner from "../../public/assets/NewBanner.png";
 import Image from "next/image";
 type Props = {};
 

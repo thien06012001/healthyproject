@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Trophy from "../public/assets/Trophy.png";
-import Medal from "../public/assets/Medal.png";
-import Farm from "../public/assets/Farm.png";
-import styles from "../styles/Feed.module.css";
+import Trophy from "../../public/assets/Trophy.png";
+import Medal from "../../public/assets/Medal.png";
+import Farm from "../../public/assets/Farm.png";
+import styles from "../../styles/Feed.module.css";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 type Props = {};
 

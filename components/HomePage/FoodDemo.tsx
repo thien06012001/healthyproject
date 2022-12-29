@@ -1,11 +1,11 @@
 import React from "react";
-import Food1 from "../public/assets/Food1.png";
-import Food2 from "../public/assets/Food2.png";
-import Food3 from "../public/assets/Food3.png";
+import Food1 from "../../public/assets/Food1.png";
+import Food2 from "../../public/assets/Food2.png";
+import Food3 from "../../public/assets/Food3.png";
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
-import styles from "../styles/ViewMore.module.css";
+import styles from "../../styles/ViewMore.module.css";
 type Props = {};
 
 function FoodDemo({}: Props) {

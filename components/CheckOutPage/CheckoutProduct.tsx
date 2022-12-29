@@ -3,7 +3,7 @@ import Image from "next/image";
 import { StarIcon } from "@heroicons/react/24/solid";
 import { useDispatch } from "react-redux";
 import { addToBasket, removeFromBasket } from "../../slices/basketSlice";
-import styles from "../styles/Checkout.module.css";
+import styles from "../../styles/Checkout.module.css";
 function CheckoutProduct({
   id,
   name,

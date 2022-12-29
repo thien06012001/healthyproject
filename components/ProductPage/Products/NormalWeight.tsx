@@ -5,7 +5,7 @@ import Image from "next/image";
 import { StarIcon } from "@heroicons/react/24/solid";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../../../slices/basketSlice";
-import styles from "../styles/Addbutton.module.css";
+import styles from "../../../styles/Addbutton.module.css";
 type Props = {
   normalweight: NormalWeight;
 };

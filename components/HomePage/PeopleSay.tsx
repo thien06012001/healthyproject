@@ -1,7 +1,7 @@
 import React from "react";
-import people1 from "../public/assets/people1.png";
-import people2 from "../public/assets/people2.png";
-import people3 from "../public/assets/people3.png";
+import people1 from "../../public/assets/people1.png";
+import people2 from "../../public/assets/people2.png";
+import people3 from "../../public/assets/people3.png";
 import Image from "next/image";
 type Props = {};
 

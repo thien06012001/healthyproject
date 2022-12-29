@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import AboutPic1 from "../public/assets/AboutPic1.png";
-import AboutPic2 from "../public/assets/Aboutpic2.png";
-import Chef from "../public/assets/Chef.png";
-import Option from "../public/assets/Option.png";
-import Orders from "../public/assets/Orders.png";
+import AboutPic1 from "../../public/assets/AboutPic1.png";
+import AboutPic2 from "../../public/assets/Aboutpic2.png";
+import Chef from "../../public/assets/Chef.png";
+import Option from "../../public/assets/Option.png";
+import Orders from "../../public/assets/Orders.png";
 type Props = {};
 
 function explore({}: Props) {

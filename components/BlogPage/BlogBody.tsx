@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPic2 from "../public/assets/BlogPic2.png";
+import BlogPic2 from "../../public/assets/BlogPic2.png";
 import Image from "next/image";
 
 

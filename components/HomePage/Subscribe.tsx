@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Subscribe.module.css";
+import styles from "../../styles/Subscribe.module.css";
 type Props = {};
 
 function Subscribe({}: Props) {

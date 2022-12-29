@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import styles from "../styles/Nav2.module.css";
+import styles from "../../styles/Nav2.module.css";
 type Props = {};
 
 function NavForProduct({}: Props) {

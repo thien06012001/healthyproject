@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import pic1 from "../public/assets/pic1.png";
-import pic2 from "../public/assets/pic2.png";
-import pic3 from "../public/assets/pic3.png";
-import bmi from "../public/assets/bmi.png";
-import deliver from "../public/assets/deliver.png";
-import dishes from "../public/assets/dishes.png";
-import enjoy from "../public/assets/enjoy.png";
+import pic1 from "../../public/assets/pic1.png";
+import pic2 from "../../public/assets/pic2.png";
+import pic3 from "../../public/assets/pic3.png";
+import bmi from "../../public/assets/bmi.png";
+import deliver from "../../public/assets/deliver.png";
+import dishes from "../../public/assets/dishes.png";
+import enjoy from "../../public/assets/enjoy.png";
 import { useRouter } from "next/router";
 type Props = {};
 

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import BlogPic1 from "../public/assets/BlogPic1.png";
-import BlogPic4 from "../public/assets/BlogPic4.png";
-import BlogPic3 from "../public/assets/BlogPic3.png";
-import Blog2 from "../public/assets/Blog2.png";
+import BlogPic1 from "../../public/assets/BlogPic1.png";
+import BlogPic4 from "../../public/assets/BlogPic4.png";
+import BlogPic3 from "../../public/assets/BlogPic3.png";
+import Blog2 from "../../public/assets/Blog2.png";
 import { useRouter } from "next/router";
 type Props = {};
 
