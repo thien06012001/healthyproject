@@ -52,7 +52,7 @@ function UnderWeight({ underweight }: Props) {
             50+ orders
           </p>
         </div>
-        <div className="flex justify-right w-[50%]">
+        <div className="flex justify-end w-[50%]">
           {Array(rating)
             .fill(rating)
             .map((_, i) => (
