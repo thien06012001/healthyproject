@@ -1,12 +1,12 @@
 import { GetStaticProps } from "next";
 import React from "react";
 import Navbar from "../../../components/Navbar";
-import ProductFeed from "../../../components/Obese/ProductFeed";
+import ProductFeed from "../../../components/ProductPage/Obese/ProductFeed";
 import { sanityClient } from "../../../sanity";
 import { Obese } from "../../../typings";
 import category from "../../../public/assets/category.png";
 import Image from "next/image";
-import NavForProduct from "../../../components/NavForProduct";
+import NavForProduct from "../../../components/ProductPage/NavForProduct";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Icon from "../../../public/assets/Logo.png";

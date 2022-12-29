@@ -8,7 +8,7 @@ import nookies from "nookies";
 import { firebaseAdmin } from "../firebaseAdmin";
 import db, { auth } from "../firebase";
 import moment from "moment";
-import Order from "../components/Order";
+import Order from "../components/OrdersPage/Order";
 import Navbar from "../components/Navbar";
 import { useSelector } from "react-redux";
 import { selectUser } from "../slices/userSlice";

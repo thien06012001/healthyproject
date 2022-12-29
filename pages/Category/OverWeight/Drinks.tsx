@@ -5,9 +5,9 @@ import { sanityClient } from "../../../sanity";
 import { OverWeight } from "../../../typings";
 import category from "../../../public/assets/category.png";
 import Image from "next/image";
-import NavForProduct from "../../../components/NavForProduct";
+import NavForProduct from "../../../components/ProductPage/NavForProduct";
 import { useRouter } from "next/router";
-import ProductFeed_Drinks from "../../../components/OverWeight/ProductFeed_Drinks";
+import ProductFeed_Drinks from "../../../components/ProductPage/OverWeight/ProductFeed_Drinks";
 import Head from "next/head";
 import Icon from "../../../public/assets/Logo.png";
 type Props = {

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import { selectItems, selectTotal } from "../slices/basketSlice";
-import CheckoutProduct from "../components/CheckoutProduct";
+import CheckoutProduct from "../components/CheckOutPage/CheckoutProduct";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 import Navbar from "../components/Navbar";

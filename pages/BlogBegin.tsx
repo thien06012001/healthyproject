@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "../components/Contact";
-import ContentBlog from "../components/ContentBlog";
+import ContentBlog from "../components/BlogPage/ContentBlog";
 import Navbar from "../components/Navbar";
 import Icon from "../public/assets/Logo.png";
 import Head from "next/head";
