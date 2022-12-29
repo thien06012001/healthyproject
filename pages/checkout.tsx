@@ -30,7 +30,7 @@ function Checkout() {
     }
   };
   return (
-    <div className="bg-lime-50">
+    <div className="bg-lime-50 h-auto min-h-screen">
       <Head>
         <title>Check out</title>
         <link rel="icon" href={Icon.src} />

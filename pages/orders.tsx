@@ -18,7 +18,7 @@ function Orders({ orders }: any) {
 
   console.log(orders);
   return (
-    <div className="bg-lime-50 h-screen">
+    <div className="bg-lime-50 h-auto min-h-screen">
       <Navbar />
       <main className="max-w-screen-lg mx-auto p-10 bg-white">
         <h1 className="text-3xl border-b mb-2 pb-1 border-yellow-400">
