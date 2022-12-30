@@ -7,7 +7,7 @@
 }
 
 .container {
-  @apply w-[300px] h-[600px] p-[15px];
+  @apply w-auto min-w-[350px] p-[15px] h-auto;
   box-shadow: 3px 3px 3px #ccc, -3px -3px 3px white;
   border-radius: 25px;
 }
@@ -55,7 +55,7 @@
 }
 
 .button {
-  @apply rounded-xl w-[200px] text-center relative inline-block text-[#444] text-[16px] mt-[40px] m-auto bg-[#efefef] uppercase;
+  @apply rounded-xl w-[250px] text-center relative inline-block text-[#444] text-[16px] mt-[40px] m-auto bg-[#efefef] uppercase;
   padding: 10px 20px;
   border: none;
   font-weight: 700;

@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
 import styles from "../styles/BMI.module.css";
-import { CalculatorIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Icon from "../public/assets/Logo.png";
@@ -12,7 +10,7 @@ function BMI() {
   const [bmi, setBmi] = useState("");
   const [message, setMessage] = useState("");
   const router = useRouter();
-  const underweight = useState("You are underweight");
+  const [weightCategory, setWeightCategory] = useState(null)
   let calcBmi = (event: any) => {
     event.preventDefault();
     if (weight === 0 || height === 0) {
@@ -30,6 +28,16 @@ function BMI() {
         setMessage("You are overweight");
       } else if (bmi >= 30) {
         setMessage("You are obese");
+      }
+
+      if (bmi < 18.5) {
+        setWeightCategory("UnderWeight");
+      } else if (bmi >= 18.5 && bmi < 25) {
+        setWeightCategory("NormalWeight");
+      } else if (bmi >= 25 && bmi < 30) {
+        setWeightCategory("OverWeight");
+      } else if (bmi >= 30) {
+        setWeightCategory("Obese");
       }
     }
   };
@@ -66,7 +74,7 @@ function BMI() {
           </div>
           <p className="text-center font-bold">Your BMI is: {bmi}</p>
           <p className="text-center font-bold">{message}</p>
-
+          {weightCategory != null ? <button className={styles.button} onClick={() => router.push(`/Category/${weightCategory}/AllCategory`)}>{weightCategory}</button> : <></>}
           <div className="m-auto flex flex-col items-center justify-center">
             <button type="submit" className={styles.button}>
               Calculate
