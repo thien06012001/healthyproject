@@ -6,7 +6,7 @@ import styles from "../styles/Nav.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "../slices/userSlice";
 import { auth } from "../firebase";
-import { ShoppingCartIcon, GiftIcon, ClipboardDocumentListIcon } from "@heroicons/react/24/solid";
+import { ShoppingCartIcon, ClipboardDocumentListIcon } from "@heroicons/react/24/solid";
 import { selectItems } from "../slices/basketSlice";
 type Props = {};
 

@@ -14,7 +14,7 @@ const Question = (props: Props) => {
         <p className="text-[#D7E2EC] text-[55px]">
           Let's Discuss & Free Consultation
         </p>
-        <div className="text-[#FFFCF9] text-[28px]  text-center justify-center items-center">
+        <div className="text-[#FFFCF9] text-[28px] text-center">
           Improve your healthy is also our mission{" "}
         </div>
       </div>

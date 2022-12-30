@@ -13,22 +13,20 @@ function FoodDemo({}: Props) {
   return (
     <div>
       <div
-        className="top-24 uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl justify-center 
-        items-center text-center mt-[80px]"
+        className="uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl text-center mt-[80px]"
       >
-        <p className="text-xl m-auto">OUR FEATURE MENU</p>
+        OUR FEATURE MENU
       </div>
       <div
-        className="uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl justify-center 
-        items-center text-center mt-[25px]"
+        className="uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl text-center mt-[25px]"
       >
         <p className="text-[#585858]">
-          ENJOY THE BEST MENU AND GET <br />
-          <span className="text-[#FB9333]"> DISCOUNTS</span> AVAILABLE
+          ENJOY THE BEST MENU AND GET <br/>
+          <span className="text-[#FB9333]">DISCOUNTS</span> AVAILABLE
         </p>
       </div>
-      <div className="gird grid-col flex flex-row mt-[30px]">
-        <div className=" mx-auto">
+      <div className="flex flex-row mt-[30px]">
+        <div className="mx-auto">
           <Image src={Food1} className="w-[380px] h-[450px]" alt={""} />
           <div className="mt-[-120px] text-left ml-[32px] flex flex-col">
             <p className="text-white text-xl font-semibold">Salad Yummy Red</p>
@@ -37,7 +35,7 @@ function FoodDemo({}: Props) {
             </div>
           </div>
         </div>
-        <div className=" mx-auto">
+        <div className="mx-auto">
           <Image src={Food2} className="w-[380px] h-[450px]" alt={""} />
           <div className="mt-[-120px] text-left ml-[32px] flex flex-col">
             <p className="text-white text-xl font-semibold">
@@ -48,7 +46,7 @@ function FoodDemo({}: Props) {
             </div>
           </div>
         </div>
-        <div className=" mx-auto">
+        <div className="mx-auto">
           <Image src={Food3} className="w-[380px] h-[450px]" alt={""} />
           <div className="mt-[-120px] text-left ml-[32px] flex flex-col">
             <p className="text-white text-xl font-semibold">

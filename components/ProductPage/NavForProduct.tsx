@@ -6,7 +6,7 @@ type Props = {};
 function NavForProduct({}: Props) {
   const router = useRouter();
   return (
-    <div className=" bg-lime-400 h-[80px] flex flex-row items-center justify-center text-base w-full m-auto">
+    <div className=" bg-lime-400 h-[80px] flex flex-row items-center justify-center text-base w-full">
       <button
         onClick={() => router.push("/Category/All/AllCategory")}
         className={styles.button}

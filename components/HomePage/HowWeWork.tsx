@@ -15,29 +15,27 @@ function HowWeWork({}: Props) {
   return (
     <div className="bg-lime-50">
       <div
-        className="top-24 uppercase tracking-[2px] text-[#FB9333] font-semibold text-2xl justify-center items-center text-center mt-[100px]
+        className="uppercase tracking-[2px] text-[#FB9333] font-semibold text-3xl text-center mt-[75px]
         "
       >
-        <p className="text-xl m-auto">How we work</p>
+        How we work
       </div>
-      <div className="grid grid-cols-2">
-        <div className="mx-auto ">
-          <div className="mt-[5px] flex space-x-0 px-0 ">
-            <div className="flex flex-col text-center items-center">
-              <div className="flex flex-row mx-auto ">
+      <div className="grid grid-cols-2 justify-center">
+        <div className="mx-auto">
+          <div className="mt-[5px] flex">
+            <div className="flex flex-col text-center items-center justify-center">
+              <div className="flex flex-row mx-auto">
                 <Image
                   src={pic1}
-                  className=" absolute my-6 mx-6 h-[340px] w-[379px] "
+                  className="absolute mt-6 mx-6 h-[340px] w-[379px] "
                   alt=""
                 />
                 <Image
                   src={pic2}
-                  className=" ml-[442px] h-[204px] w-[278px] mt-[24.5px]"
+                  className=" ml-[442px] h-[204px] w-[278px] mt-6"
                   alt=""
                 />
               </div>
-              {/* <div className='text-center my-[40px] bg-[#A1C94CE5] w-[278px] h-[56px] justify-center
-                            rounded-3xl ml-[440px] mt-[20px]'> */}
               <button
                 onClick={() => router.push("/Category/All/AllCategory")}
                 className="text-white text-2xl font-bold uppercase text-center my-[40px] bg-[#A1C94CE5] w-[278px] h-[56px] 
@@ -45,7 +43,6 @@ function HowWeWork({}: Props) {
               >
                 Buy Now
               </button>
-              {/* </div> */}
             </div>
           </div>
           <div className="">
@@ -56,12 +53,12 @@ function HowWeWork({}: Props) {
             />
           </div>
         </div>
-        <div className="mx-auto px-36 w-[900px] h-[112px] text-start grid grid-row ">
-          <div>
+        <div className="mx-auto px-36 h-[112px] text-start grid grid-row ">
+        
             <p className="text-[#585858] font-semibold text-[40px] mt-[24.5px]">
               It's Time Your Healthy Future <br /> Begins
             </p>
-          </div>
+        
           <div className="flex flex-row">
             <Image src={bmi} className="h-[58px] w-[60px] mt-[30px] " alt="" />
             <div className=" mt-[18px] px-14 flex flex-col ">

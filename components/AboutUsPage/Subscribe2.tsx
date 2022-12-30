@@ -6,25 +6,22 @@ function Subscribe2({}: Props) {
   return (
     <div className="bg-[#A1C94CE5] rounded-3xl max-w-screen-xl h-[550px] mt-[150px] mx-auto">
       <div
-        className="  tracking-[2px] text-[#FB9333] font-semibold justify-center 
-        items-center text-center py-[20px]"
+        className="tracking-[2px] text-[#FB9333] font-semibold text-center py-[20px]"
       >
         <p className="text-[30px]">Our Subscribe</p>
       </div>
       <div
-        className="top-24 tracking-[2px] font-semibold text-2xl justify-center 
-          items-center text-center mt-[20px]"
+        className="top-24 tracking-[2px] font-semibold text-2xl text-center mt-[20px]"
       >
         <p className="text-[#585858] text-[48px] py-[5px]">
-          {" "}
           Subscribe To Get The Latest
-        </p>{" "}
+        </p>
         <br />
         <p className="text-[#585858] text-[48px] py-[5px]">
           Promo from Kitchen{" "}
         </p>
       </div>
-      <div className="justify-center items-center text-center mt-[30px]">
+      <div className="text-center mt-[30px]">
         <p className="text-[16px] text-[#3E3E3E] opacity-[0.7]">
           We recommended you to subscribe to our promo program, <br />
           drop your email below to get daily update about us.

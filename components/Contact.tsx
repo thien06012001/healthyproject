@@ -5,13 +5,13 @@ type Props = {};
 
 function Contact({}: Props) {
   return (
-    <div className="bg-lime-50 ">
+    <div className="bg-lime-50">
       <div className="mt-[200px] flex flex-row">
         <div className="mx-auto">
           <div className="flex flex-col">
             <p
               className='text-[24px] text-[#585858] font-semibold 
-                        font-family:"Roboto" '
+                        font-[Roboto] '
             >
               BMI <span className="text-[#FB9333]">Kitchen</span>{" "}
             </p>
@@ -55,7 +55,7 @@ function Contact({}: Props) {
             <p className="text-[#575757] text-[16px] px-2">+84 936 846 364</p>
           </div>
         </div>
-        <div className="mx-auto ">
+        <div className="mx-auto">
           <SocialIcon
             className="w-[2.5px] w-3px"
             url="https://www.facebook.com/profile.php?id=100083708621101"

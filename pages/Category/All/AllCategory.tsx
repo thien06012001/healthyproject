@@ -32,7 +32,7 @@ function Category({ normalweights, underweights, overweights, obeses }: Props) {
         </h2>
         <Image src={category} className="w-screen h-screen" alt={""} />
       </div>
-      <div className="top-[10%]">
+      <div className="">
         <NavForProduct />
       </div>
       <main className="flex flex-row">

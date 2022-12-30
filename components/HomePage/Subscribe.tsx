@@ -4,16 +4,14 @@ type Props = {};
 
 function Subscribe({}: Props) {
   return (
-    <div className="w-[1200px] h-[700px] items-center justify-center mx-auto">
+    <div className="w-[1200px] h-[700px]">
       <div
-        className="  tracking-[2px] text-[#FB9333] font-semibold justify-center 
-        items-center text-center py-[20px]"
+        className="tracking-[2px] text-[#FB9333] font-semibold text-center py-[20px]"
       >
         <p className="text-[30px]">Our Subscribe</p>
       </div>
       <div
-        className="top-24 tracking-[2px] font-semibold text-2xl justify-center 
-          items-center text-center mt-[20px]"
+        className="top-24 tracking-[2px] font-semibold text-2xl text-center mt-[20px]"
       >
         <p className="text-[#585858] text-[48px] py-[5px]">
           {" "}
@@ -24,7 +22,7 @@ function Subscribe({}: Props) {
           Promo from Jez Salad{" "}
         </p>
       </div>
-      <div className="justify-center items-center text-center mt-[30px]">
+      <div className="text-center mt-[30px]">
         <p className="text-[16px] text-[#3E3E3E] opacity-[0.7]">
           We recommended you to subscribe to our promo program, <br />
           drop your email below to get daily update about us.
