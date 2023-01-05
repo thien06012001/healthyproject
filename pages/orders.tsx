@@ -12,7 +12,8 @@ import Order from "../components/OrdersPage/Order";
 import Navbar from "../components/Navbar";
 import { useSelector } from "react-redux";
 import { selectUser } from "../slices/userSlice";
-
+import firebase from 'firebase/app';
+import 'firebase/auth';
 function Orders({ orders }: any) {
   const session = useSelector(selectUser);
 
@@ -69,6 +70,8 @@ export async function getServerSideProps(context: any) {
       props: {},
     };
   }
+
+  
   // FETCH STUFF HERE!! 🚀
 
   //firebase database

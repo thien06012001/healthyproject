@@ -14,9 +14,6 @@ const FirebaseAuthProvider: React.FC<React.PropsWithChildren> = ({ children })=>
   const value = { user };
 
   React.useEffect(() => {
-    // const unsubscribe = auth.onAuthStateChanged(setUser);
-    // return unsubscribe;
-
      // listen for token changes
     // call setUser and write new token as a cookie
     return auth.onIdTokenChanged(async (user : User) => {

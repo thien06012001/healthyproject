@@ -20,7 +20,7 @@ export default async (req:NextApiRequest, res:NextApiResponse) =>{
         payment_method_types: ['card'],
         shipping_options: [{shipping_rate: 'shr_1MD3rXLvU7IyGFiC8dPeD2Wh'}],
         shipping_address_collection: {
-            allowed_countries: ['GB', 'US', 'CA']
+            allowed_countries: []
         },
         line_items: transformedItems,
         mode: 'payment',

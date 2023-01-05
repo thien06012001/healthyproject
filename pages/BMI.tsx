@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import styles from "../styles/BMI.module.css";
 import { useRouter } from "next/router";
@@ -11,7 +10,7 @@ function BMI() {
   const [message, setMessage] = useState("");
   const router = useRouter();
   const [weightCategory, setWeightCategory] = useState(null)
-  let calcBmi = (event: any) => {
+  let calcBmi = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (weight === 0 || height === 0) {
       alert("Please enter a valid weight and height");
