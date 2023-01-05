@@ -83,7 +83,7 @@ function BMI() {
             </button>
           </div>
         </form>
-        <div className="m-auto flex items-center justify-center">
+        <div className="m-auto flex items-center justify-center uppercase">
           <button onClick={() => router.push("/")} className={styles.button}>
             Back to HomePage
           </button>
