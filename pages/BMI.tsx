@@ -74,7 +74,7 @@ function BMI() {
           <p className="text-center font-bold">Your BMI is: {bmi}</p>
           <p className="text-center font-bold">{message}</p>
           {weightCategory != null ? <button className={styles.button} onClick={() => router.push(`/Category/${weightCategory}/AllCategory`)}>{weightCategory}</button> : <></>}
-          <div className="m-auto flex flex-col items-center justify-center">
+          <div className="m-auto flex flex-col items-center justify-center uppercase">
             <button type="submit" className={styles.button}>
               Calculate
             </button>
