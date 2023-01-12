@@ -22,7 +22,7 @@ function Orders({ orders }: any) {
   return (
     <div className="bg-lime-50 h-auto min-h-screen">
       <Head>
-        <title>Sign Up</title>
+        <title>Orders History</title>
         <link rel="icon" href={Icon.src} />
       </Head>
       <Navbar />
