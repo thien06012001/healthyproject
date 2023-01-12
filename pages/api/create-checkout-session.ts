@@ -31,7 +31,11 @@ export default async (req:NextApiRequest, res:NextApiResponse) =>{
             images: JSON.stringify(items.map((item:any) => item.image))
         }
     })
-    res.status(200).json({id: session.id})
+    // res.status(200).json({id: session.id})
+    setTimeout(() => {
+        // 3. Notify Stripe that event recieved.
+        res.json({id: session.id})
+    }, 2000)
 }
 
 
