@@ -6,20 +6,25 @@ import { query, orderBy } from "firebase/firestore/lite";
 import React from "react";
 import nookies from "nookies";
 import { firebaseAdmin } from "../firebaseAdmin";
-import db, { auth } from "../firebase";
+import db from "../firebase";
 import moment from "moment";
 import Order from "../components/OrdersPage/Order";
 import Navbar from "../components/Navbar";
 import { useSelector } from "react-redux";
 import { selectUser } from "../slices/userSlice";
-import firebase from 'firebase/app';
 import 'firebase/auth';
+import Head from "next/head";
+import Icon from "../public/assets/Logo.png";
 function Orders({ orders }: any) {
   const session = useSelector(selectUser);
 
   console.log(orders);
   return (
     <div className="bg-lime-50 h-auto min-h-screen">
+      <Head>
+        <title>Sign Up</title>
+        <link rel="icon" href={Icon.src} />
+      </Head>
       <Navbar />
       <main className="max-w-screen-lg mx-auto p-10 bg-white">
         <h1 className="text-3xl border-b mb-2 pb-1 border-yellow-400">
@@ -70,7 +75,6 @@ export async function getServerSideProps(context: any) {
       props: {},
     };
   }
-
   
   // FETCH STUFF HERE!! 🚀
 
