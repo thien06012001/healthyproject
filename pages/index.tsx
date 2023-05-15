@@ -20,6 +20,7 @@ const Home = ({}: Props) => {
       <Head>
         <title>Healthy Food</title>
         <link rel="icon" href={Icon.src} />
+        {/* <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9176a8f2-933e-4550-842c-b3ac11c46ef6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> */}
       </Head>
       <Navbar />
       <main className="w-screen mx-auto">
