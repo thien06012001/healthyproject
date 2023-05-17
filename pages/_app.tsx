@@ -7,12 +7,15 @@ import CrispChatbot from "../components/CrispChatbot";
 import { ToastProvider } from "@apideck/components";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const url =
+  'https://www.socialintents.com/api/socialintents.1.3.js#2c9fab3588226f81018827b31f8a0597';
   return (
     <FirebaseAuthProvider>
       <Provider store={store}>
         <ToastProvider>
           <Component {...pageProps} />
-          <CrispChatbot />
+          {/* <CrispChatbot /> */}
+          <script src={url} async />
         </ToastProvider>
       </Provider>
     </FirebaseAuthProvider>
