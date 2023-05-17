@@ -17,7 +17,7 @@ import Head from "next/head";
 import Icon from "../public/assets/Logo.png";
 function Orders({ orders }: any) {
   const session = useSelector(selectUser);
-
+  console.log()
   console.log(orders);
   return (
     <div className="bg-lime-50 h-auto min-h-screen">
@@ -31,7 +31,7 @@ function Orders({ orders }: any) {
           Your orders
         </h1>
         {session ? (
-          <h2>{orders.length} Orders</h2>
+          <h2>{orders?.length} Orders</h2>
         ) : (
           <h2>Please sign in to see your orders</h2>
         )}
