@@ -67,9 +67,6 @@ function Navbar({}: Props) {
           <button className={styles.button} onClick={() => router.push("/BMI")}>
             BMI calculate
           </button>
-          <a className={`${styles.button} flex items-center justify-center`} href="https://chatgpt-messenger-nu.vercel.app/">
-            Chat bot
-          </a>
         </div>
         <div className="flex justify-end text-xs space-x-6 mx-6 w-[20%] whitespace-nowrap">
           <div className="m-auto">
